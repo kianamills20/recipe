@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Herbal Recipes — Frontend
 
 This is a minimal Vite + React frontend scaffold for the Herbal Recipes app.
@@ -21,3 +22,7 @@ Next steps (when you ask):
 - Add React Router for direct links to recipes
 - Implement backend API and PostgreSQL persistence
 - Add search indexing or fuzzy search
+=======
+# recipe
+A user-friendly, searchable recipe app providing easy access to a diverse, organized collection of recipes. 
+>>>>>>> 60f5836ccf93e8f65ea3375fa74fc7af5e9a1ef6
