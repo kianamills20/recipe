@@ -1,0 +1,30 @@
+:root{--bg:#f7fdf7;--card:#ffffff;--muted:#557a55;--accent:#2e8b57;--accent-2:#4caf50}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#0b2b17}
+.app{max-width:1000px;margin:0 auto;padding:28px}
+.site-header{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{font-size:28px}
+.site-header h1{margin:0;font-size:1.6rem}
+.tag{color:var(--muted);margin:0}
+.controls{display:flex;gap:12px;align-items:center;margin-bottom:16px}
+.controls input{flex:1;padding:10px 14px;border-radius:10px;border:1px solid #e6f0ea;background:white;box-shadow:0 1px 2px rgba(0,0,0,0.03)}
+.controls .count{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border-radius:12px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;box-shadow:0 6px 18px rgba(46,139,87,0.06);transition:transform .12s ease}
+.card:hover{transform:translateY(-6px)}
+.thumb{width:100%;height:160px;object-fit:cover}
+/* fallback visuals when images fail to load */
+.thumb-fallback{width:100%;height:160px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:white}
+.thumb-fallback .fallback-text{padding:8px 12px;font-weight:600;text-align:center}
+.detail-fallback{width:100%;height:300px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#6fcf97);color:white;border-radius:8px;margin:12px 0}
+.detail-fallback .fallback-title{font-size:1.2rem;font-weight:700}
+.card-body{padding:12px}
+.card-body h3{margin:0 0 8px}
+.muted{color:var(--muted)}
+.meta{font-size:0.9rem;color:#2f5f3a}
+.detail{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(46,139,87,0.06)}
+.detail-img{width:100%;height:auto;border-radius:8px;margin:12px 0}
+.back{background:none;border:1px solid #dbeede;padding:8px 10px;border-radius:8px;cursor:pointer;color:var(--accent)}
+.site-footer{text-align:center;color:var(--muted);margin-top:24px}
+.no-results{color:#666}
